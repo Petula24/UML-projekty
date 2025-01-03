@@ -1,0 +1,32 @@
+SYSTÉM SPRÁVY KNIHOVNY:
+
+Požadavky:
+1. Čtenář si může vypůjčit knihu
+2. Kniha může být dostupná nebo vypůjčená
+3. Každý čtenář může mít více výpůjček, ale každá kniha může být vypůjčená pouze jedním čtenářem.
+4. Knihovník může přidávat nové knihy, aktualizovat informace o knihách a mazat knihy.
+
+1)	Diagram tříd:
+Kniha – třída kniha obsahuje:
+ 	   Atributy - název : String, autor: String, stav : Enum (dostupná/vypůjčená). 
+ 	   Metody - + vypujcitKnihu() : void,  + vratitKnihu() : void
+ 	   Vztahy – Vztah s čtenářem (agregace)
+Čtenář – třída čtenář obsahuje:
+ 	  Atributy – jméno : String, id : int
+ 	  Metody -  + vypujcitKnihu(kniha:Kniha):void, +vratitKnihu(kniha:Kniha):void
+ 	  Vztahy -  s výpůjčkou (asociace)
+Výpůjčka – třída výpůjčka obsahuje:
+ 	  Atributy – datum Výpůjčky : Date, datum Vrácení : Date
+ 	  Vztahy – Asociace s Knihou a Čtenářem
+
+2)	Use Case Diagram:
+Aktéři: 
+ 	- Čtenář: může si knihu půjčit, vrátit knihu a prohlížet dostupné knihy
+ 	- Knihovník: může přidávat, aktualizovat a mazat knihy.
+Případy použití:
+ 	1. Výpůjčka knihy
+ 	2. Vrácení knihy
+ 	3. Prohlížení dostupných knih
+ 	4. Přidání nové knihy
+ 	5. Aktualizace informací o knize
+ 	6. Smazání knihy
