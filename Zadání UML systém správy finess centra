@@ -1,0 +1,76 @@
+Systém správy fitness centra
+
+Popis projektu: 
+Tento systém umožňuje správu členů, rezervaci lekcí a správu trenérů. Členové mohou rezervovat lekce, sledovat svůj cvičební plán a informace o svém členství. 
+Trenéři mohou spravovat plán lekcí a sledovat účast na lekcích.
+
+Požadavky:
+1.	Člen může rezervovat lekci, rušit rezervaci, zobrazit svůj profil a svůj plán lekcí.
+2.	Trenér může spravovat plán lekcí (přidávat, aktualizovat nebo mazat lekce).
+3.	Lekce má maximální kapacitu a čas konání
+4.	Členství může být aktivní nebo neaktivní, s datem konce členství
+5.	Správce fitness centra může spravovat členy, trenéry a lekce
+
+1)	Diagram tříd
+
+Třídy a jejich diagramy:
+1.	Člen
+	Atributy:
+-	id : int
+-	jmeno : string
+-	email : string
+-	clenstvi
+	Metody:
+-	rezervovatLekci (lekce:Lekce) : void
+-	zrusitRezervaci (lekce:Lekce) : void
+-	zobrazitProfil () : void
+-	zobrazitPlan () : void
+
+2.	Trenér
+	Atributy:
+-	id : int
+-	jmeno : string
+-	specializace : string
+	Metody:
+-	pridatLekci (lekce:Lekce) : void
+-	aktualizovatLekci (lekce:Lekce) : void
+-	smazatLekci (lekce:Lekce) : void
+
+3.	Lekce
+	Atributy:
+-	id : int
+-	nazev : string
+-	kapacita : int
+-	casKonani : Date
+	Metody:
+-	zarezervovatMistoClenovi (clen:Clen) : bool
+-	zrusitRezervaciClena (clen:Clen) : bool
+
+4.	Členství
+	Atributy:
+-	id : int
+-	typ : String (např. „měsíční“, „ročně“)
+-	datumKonce: Date
+-	stav : Enum (aktivní/neaktivní)
+
+5.	Správce fitness centra
+	Atributy:
+-	jmeno : string
+	Metody:
+-	spravovatCleny () : void
+-	spravovatTrenery () : void
+-	spravovatLekce () : void
+
+Zadání:
+-	Class Diagram: podle zadání výše
+-	Use Case Diagram:
+    Aktéři: a) Člen: může rezervovat lekce, rušit rezervace, zobrazit profil a cvičební plán
+ 	          b) Trenér: může přidávat, aktualizovat a mazat lekce
+ 	          c) Správce fitness centra: může spravovat členy, trenéry a lekce
+            Případy použití: Rezervace lekce; Zrušení rezervace; Zobrazení profilu člena; Zobrazení cvičebního plánu; 
+            Přidání nové lekce; Aktualizace lekce; Smazání lekce; Správa členů; Správa trenérů; Správa lekcí
+-	Sequence Diagram: měl by ukazovat, jak probíhá rezervace lekce:
+            1.	Člen odešle požadavek na rezervaci lekce
+            2.	Systém ověří, zde je kapacita lekce volná
+            3.	Pokud je kapacita volná, rezervace je potvrzena a člen obdrží potvrzení
+            4.	Pokud kapacita není volná, člen je informován o neúspěšné rezervaci
