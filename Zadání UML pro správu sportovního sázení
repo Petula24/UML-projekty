@@ -1,0 +1,80 @@
+Sportovní sázení
+
+Popis projektu:
+Systém spravuje uživatele, kteří si mohou vytvářet účty, prohlížet sportovní události, uzavírat sázky a sledovat výsledky. 
+Systém také umožňuje správu sportovních událostí a kurzů pro administrátory.
+
+1.	Hlavní komponenty systému
+-	Uživatelé: registrovaní uživatelé s možností sázet na sportovní události
+-	Sportovní události: umožňují zobrazit zápasy, jejich data a nabízené kurzy
+-	Sázky: obsahují informace o tom, na co uživatel vsadil, za kolik a jaký byl výsledek
+-	Admin: umožňuje správu uživatelů, událostí a kurzů
+-	Platební systém: slouží pro vklady a výběry uživatelských prostředků 
+
+2.	UML diagramy
+A)	Use Case Diagram
+Zahrnuje základní uživatele systému:
+	Registrovaný uživatel:
+  -	Registrace/Přihlášení
+  -	Prohlížení událostí a kurzů
+  -	Uzavření sázky
+  -	Sledování historie sázek
+  -	Výběr prostředků
+	Admin:
+  -	Správa uživatelů
+  - Přidání, úprava nebo smazání sportovních událostí
+  -	Nastavení kurzů
+
+B)	Class Diagram
+Hlavní třídy:
+	User:
+  -	userID: int
+  -	name: string
+  -	email: string
+  -	balance: float
+  -	Metody: register(), login(), placeBet(), withdrawFunds()
+	Event:
+  -	eventID: int
+  -	sport: string
+  -	team1: string
+  -	team2: string
+  -	date: Date
+  -	odds: List<Odd>
+  -	Metody: getOdds(), updateOdds()
+	Bet:
+  -	betId: int
+  -	userId: int
+  -	eventId: int
+  -	amount: float
+  -	chosenOutcome: string
+  -	status: string (Pending/Win/Loss)
+  -	Metody: calculateWinnings()
+	Admin:
+  -	adminId: int
+  -	name: string
+  -	Metody: addEvent(), editevent(), deleteEvent()
+	Payment:
+  -	transactionID: int
+  -	userID: int
+  -	amount: float
+  -	type: string (Deposit/Withdrawal)
+  -	Metody: processPayment()
+
+C)	Activity Diagram
+Popisuje proces uzavření sázky:
+1)	Uživatel si vybere sportovní událost
+2)	Zobrazí se dostupné kurzy
+3)	Uživatel vybere výsledek a zadá částku
+4)	Systém ověří zůstatek uživatele
+5)	Pokud má uživatel dostatek prostředků:
+  -	Sázka se uzavře
+  -	Zůstatek uživatele se aktualizuje
+6)	Pokud ne, zobrazí se chyba
+
+D)	Sequence Diagram
+Příklad: Uzavření sázky:
+1)	Uživatel zadá požadavek na uzavření sázky
+2)	Systém ověří zůstatek prostředků
+3)	Sázka je uložena do databáze
+4)	Aktualizuje se zůstatek uživatele
+5)	Systém potvrdí úspěšně uzavření sázky
