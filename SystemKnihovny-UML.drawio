@@ -1,0 +1,261 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Stránka-1" id="xEyiMU1ayPzgCesdPK1c">
+    <mxGraphModel dx="1194" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LxrBPzwMNKAbfitbvLST-6" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;div&gt;momentalniStav&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#FFF2CC;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="310" width="140" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-7" value="dostupna" style="text;strokeColor=none;fillColor=#FFF2CC;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="LxrBPzwMNKAbfitbvLST-6" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-8" value="vzpujcena" style="text;strokeColor=none;fillColor=#FFF2CC;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="LxrBPzwMNKAbfitbvLST-6" vertex="1">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;Kniha&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&amp;nbsp;+ id : int&lt;br&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nazev : string&lt;br&gt;+ autor : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ stav : momentalniStav&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ vypujcitKnihu(): void&lt;br&gt;+ vratitKnihu(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="70" y="110" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Ctenar&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ jmeno : string&lt;br&gt;+ idCtenare: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ vypujcitKnihu(kniha:Kniha): void&lt;br&gt;+ vratitKnihu(kniha:Kniha): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="370" y="130" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Vypujcka&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ idVypujcky&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ datumVypujcky : Date&lt;br&gt;+ datumVraceni : Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="290" y="410" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="LxrBPzwMNKAbfitbvLST-19" target="LxrBPzwMNKAbfitbvLST-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-21" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=-0.021;exitY=0.443;exitDx=0;exitDy=0;entryX=1;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="LxrBPzwMNKAbfitbvLST-18" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="150" as="sourcePoint" />
+            <mxPoint x="260" y="189.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-23" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="270" y="170" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-24" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="340" y="170" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-25" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="372" y="410" as="sourcePoint" />
+            <mxPoint x="464" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-26" value="" style="endArrow=none;html=1;rounded=0;exitX=0.9;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="LxrBPzwMNKAbfitbvLST-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="180" as="sourcePoint" />
+            <mxPoint x="370" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-27" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;CLASS DIAGRAM&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="140" y="38" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-28" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Use Case Diagram&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="90" y="603" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-29" value="Čtenář" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="712" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-31" value="Knihovník" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="960" width="50" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-32" value="UC1 Výpůjčka knihy" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="260" y="690" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-33" value="UC2 Vrácení knihy" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="260" y="790" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-34" value="UC3 Prohlížení dostupných knih" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="460" y="720" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-35" value="UC4 Přidání nové knihy" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="260" y="880" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-36" value="UC5 Aktualizace informcí o knize" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="260" y="970" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-37" value="UC6 Smazání knihy" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="260" y="1070" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-40" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="LxrBPzwMNKAbfitbvLST-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="760" as="sourcePoint" />
+            <mxPoint x="200" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-41" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="LxrBPzwMNKAbfitbvLST-34" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="720" as="sourcePoint" />
+            <mxPoint x="450" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-42" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="LxrBPzwMNKAbfitbvLST-34" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="820" as="sourcePoint" />
+            <mxPoint x="450" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-43" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="LxrBPzwMNKAbfitbvLST-35" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="155" y="990" as="sourcePoint" />
+            <mxPoint x="205" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-44" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="LxrBPzwMNKAbfitbvLST-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="155" y="990" as="sourcePoint" />
+            <mxPoint x="205" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-45" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="LxrBPzwMNKAbfitbvLST-37" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="155" y="990" as="sourcePoint" />
+            <mxPoint x="205" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxrBPzwMNKAbfitbvLST-46" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="LxrBPzwMNKAbfitbvLST-32" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="762" as="sourcePoint" />
+            <mxPoint x="200" y="712" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-3" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1245" width="25" height="555" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-3">
+          <mxGeometry x="5" y="80" width="10" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-35" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-3">
+          <mxGeometry x="-5" y="525" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-5" value=":Výpůjčka" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="300" y="1245" width="100" height="555" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-5">
+          <mxGeometry x="45" y="80" width="10" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-36" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-5">
+          <mxGeometry x="35" y="525" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-7" value="Hledání knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0026" width="80" relative="1" as="geometry">
+            <mxPoint x="152.75" y="1360" as="sourcePoint" />
+            <mxPoint x="347.25" y="1360" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-8" value=":Kniha" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="630" y="1245" width="100" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-8">
+          <mxGeometry x="45" y="150" width="10" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-38" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-8">
+          <mxGeometry x="35" y="520" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-14" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1480" width="690" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-15" value="Dostupné" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1520" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-16" value="Nedostupné" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1640" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-18" value="Informovani o dostupnosti knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="lP3_zovhz-bHeWaL7pVN-6">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="185" y="1534.5" as="sourcePoint" />
+            <mxPoint x="160" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-19" value="vypůjčení knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="lP3_zovhz-bHeWaL7pVN-6">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="1550" as="sourcePoint" />
+            <mxPoint x="240" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-20" value="úspěšná výpůjčka knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.5;exitY=0.654;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="355" y="1610" as="sourcePoint" />
+            <mxPoint x="160" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-21" value=":Systém knihovny" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="470" y="1245" width="100" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-22" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-21">
+          <mxGeometry x="45" y="80" width="10" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-37" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" vertex="1" parent="lP3_zovhz-bHeWaL7pVN-21">
+          <mxGeometry x="35" y="520" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-23" value="Žádost o dostupnost knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="lP3_zovhz-bHeWaL7pVN-21">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="360" y="1400" as="sourcePoint" />
+            <mxPoint x="440" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-24" value="Kontrola dostupnosti knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="lP3_zovhz-bHeWaL7pVN-8">
+          <mxGeometry x="-0.0635" y="10" width="80" relative="1" as="geometry">
+            <mxPoint x="530" y="1440" as="sourcePoint" />
+            <mxPoint x="610" y="1440" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-25" value="Výsledek" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="669.5" y="1470" as="sourcePoint" />
+            <mxPoint x="520" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-26" value="Potvrzení dostupné knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="524.5" y="1510" as="sourcePoint" />
+            <mxPoint x="360" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-27" value="Žádost o výpůjčce knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="lP3_zovhz-bHeWaL7pVN-21">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="360" y="1570" as="sourcePoint" />
+            <mxPoint x="440" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-28" value="Změna stavu knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="lP3_zovhz-bHeWaL7pVN-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="520" y="1550" as="sourcePoint" />
+            <mxPoint x="600" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-29" value="Potvrzení výpůjčky knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="520" y="1600" as="sourcePoint" />
+            <mxPoint x="360" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-31" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.011;exitY=-0.133;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.999;entryY=0.571;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lP3_zovhz-bHeWaL7pVN-16" target="lP3_zovhz-bHeWaL7pVN-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="1550" as="sourcePoint" />
+            <mxPoint x="270" y="1500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-33" value="Informování o nedostupnosti knihy" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="350" y="1700" as="sourcePoint" />
+            <mxPoint x="160" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-34" value="Informovat: kniha nedostupná" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="519.5" y="1680" as="sourcePoint" />
+            <mxPoint x="355" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP3_zovhz-bHeWaL7pVN-39" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Sequence Diagram&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1169" width="190" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
